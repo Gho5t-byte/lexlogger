@@ -31,6 +31,7 @@ def brutelogPass(host,lista):
           found = 1
           ValidCreds.append(ln)
           count += 1
+          standardlog()
       except:
           print("[*]login fail...."+" "+str(ln)) 
           found = 0
