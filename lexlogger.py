@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import ftplib
 import sys
-import optparse
+
  
 def standardlog():
    try:
@@ -13,6 +13,7 @@ def standardlog():
    retList = []
    for FileName in direc:
       fn = FileName.lower()
+      print(fn)
       retList.append(fn)
    return retList      
 def brutelogPass(host,lista):
@@ -38,7 +39,5 @@ def brutelogPass(host,lista):
 lista = sys.argv[1]
 host = sys.argv[2]
 brutelogPass(host,lista)
-aaa = brutelogPass(host,lista)
-print(fdd)
-if (aaa == 1):
-  print("motho")
+
+  
